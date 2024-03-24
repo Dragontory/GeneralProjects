@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="14" timestamp="1701807642621" analysisTimestamp="1701807642272" release="">
+  <Project projectName="EmailAccounts">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\EmailAccounts\bin\EmailAccountMain.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\EmailAccounts\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\EmailAccounts\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\EmailAccounts\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="4" last="12" removedByChange="true">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Method classname="EmailAccount1" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="49" end="70" startBytecode="0" endBytecode="53" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Method>
+    <LocalVariable name="temp" register="4" pc="73" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EmailAccount1" start="64" end="64" startBytecode="70" endBytecode="70" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    <SourceLine classname="EmailAccount1" start="64" end="64" startBytecode="70" endBytecode="70" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_INCREMENT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="temp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SINGLE_DEAD_INCREMENT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NP_TOSTRING_COULD_RETURN_NULL" priority="2" rank="14" abbrev="NP" category="BAD_PRACTICE" first="1" last="3" removedByChange="true">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Method classname="EmailAccount1" name="toString" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="83" end="83" startBytecode="0" endBytecode="43" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Method>
+    <SourceLine classname="EmailAccount1" start="83" end="83" startBytecode="1" endBytecode="1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    <SourceLine classname="EmailAccount1" start="83" end="83" startBytecode="1" endBytecode="1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="3" removedByChange="true">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Field classname="EmailAccount1" name="email" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="30" end="30" startBytecode="0" endBytecode="0" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="3" removedByChange="true">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Field classname="EmailAccount1" name="firstName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="20" end="20" startBytecode="0" endBytecode="0" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="3" removedByChange="true">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Field classname="EmailAccount1" name="lastName" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="25" end="25" startBytecode="0" endBytecode="0" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE" first="6">
+    <Class classname="EmailAccountMain">
+      <SourceLine classname="EmailAccountMain" sourcefile="EmailAccountMain.java" sourcepath="EmailAccountMain.java"/>
+    </Class>
+    <Method classname="EmailAccountMain" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="EmailAccountMain" start="26" end="66" startBytecode="0" endBytecode="58" sourcefile="EmailAccountMain.java" sourcepath="EmailAccountMain.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="140" end="4655" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="input" register="4" pc="111" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="EmailAccountMain" start="47" end="47" startBytecode="113" endBytecode="113" sourcefile="EmailAccountMain.java" sourcepath="EmailAccountMain.java"/>
+    <SourceLine classname="EmailAccountMain" start="47" end="47" startBytecode="113" endBytecode="113" sourcefile="EmailAccountMain.java" sourcepath="EmailAccountMain.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Dec 2023 15:20:42 -0500" total_classes="1" referenced_classes="21" total_bugs="1" total_size="22" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.47" clock_seconds="0.35" peak_mbytes="1098.35" alloc_mbytes="2048.00" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="22" priority_2="1">
+      <ClassStats class="EmailAccountMain" sourceFile="EmailAccountMain.java" interface="false" size="22" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="90" invocations="2" avgMicrosecondsPerInvocation="45241" maxMicrosecondsPerInvocation="82194" standardDeviationMicrosecondsPerInvocation="36953"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="87" invocations="385" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="3612" standardDeviationMicrosecondsPerInvocation="426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="64" invocations="386" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="1082" standardDeviationMicrosecondsPerInvocation="144"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="11" invocations="21" avgMicrosecondsPerInvocation="565" maxMicrosecondsPerInvocation="3782" standardDeviationMicrosecondsPerInvocation="1030"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1701806334234" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1701806334253" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1701806335428" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1701806341843" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1701806386120" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1701806712049" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1701806832874" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1701806840927" release="" codeSize="16" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1701807086343" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1701807107137" release="" codeSize="21" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1701807203207" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1701807247738" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1701807397489" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1701807589667" release="" codeSize="28" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="RepositorySelectionPage.lastRepository" value="svn+ssh://stdlinux.coeit.osu.edu/share/CSE/project/c2231ai14/repos"/>
+	<item key="DirectorySelectionPage.lastParent_svn+ssh://stdlinux.coeit.osu.edu/share/CSE/project/c2231ai14/repos" value=""/>
+	<item key="CommitDialog.location.x" value="255"/>
+	<item key="CommitDialog.location.y" value="97"/>
+	<item key="CommitDialog.size.x" value="1277"/>
+	<item key="CommitDialog.size.y" value="983"/>
+	<item key="CommitDialog.weights.0" value="500"/>
+	<item key="CommitDialog.weights.1" value="500"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Revision" value="91"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Date" value="225"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Author" value="180"/>
+	<item key="HistoryTableProvider.SVNHistoryPage.Comment" value="450"/>
+	<item key="UpdateDialogWithConflictHandling.location.x" value="514"/>
+	<item key="UpdateDialogWithConflictHandling.location.y" value="0"/>
+	<item key="UpdateDialogWithConflictHandling.size.x" value="700"/>
+	<item key="UpdateDialogWithConflictHandling.size.y" value="864"/>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="svn+ssh://stdlinux.coeit.osu.edu/share/CSE/project/c2231ai14/repos"/>
+		</list>
+	</section>
+	<section name="CommitWizard">
+		<item key="VWeight1" value="500"/>
+		<item key="VWeight2" value="500"/>
+		<item key="ShowCompare" value="false"/>
+	</section>
+</section>

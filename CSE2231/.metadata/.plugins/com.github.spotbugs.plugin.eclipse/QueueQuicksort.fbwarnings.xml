@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="10" timestamp="1695929602599" analysisTimestamp="1695929602123" release="">
+  <Project projectName="QueueQuicksort">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\QueueQuicksort\bin\QueueSortMain$StringLT.class</Jar>
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\QueueQuicksort\bin\QueueSortMain.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\QueueQuicksort\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\QueueQuicksort\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\QueueQuicksort\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="4">
+    <Class classname="QueueSortMain">
+      <SourceLine classname="QueueSortMain" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    </Class>
+    <Method classname="QueueSortMain" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="QueueSortMain" start="43" end="108" startBytecode="0" endBytecode="92" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    </Method>
+    <LocalVariable name="q" register="8" pc="74" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="QueueSortMain" start="61" end="61" startBytecode="72" endBytecode="72" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    <SourceLine classname="QueueSortMain" start="61" end="61" startBytecode="72" endBytecode="72" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="q"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="4">
+    <Class classname="QueueSortMain$StringLT">
+      <SourceLine classname="QueueSortMain$StringLT" start="1" end="25" sourcefile="QueueSortMain.java" sourcepath="QueueSortMain.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 28 Sep 2023 15:33:22 -0400" total_classes="2" referenced_classes="40" total_bugs="2" total_size="41" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="1.02" clock_seconds="0.48" peak_mbytes="1064.67" alloc_mbytes="2048.00" gc_seconds="0.02" priority_2="1" priority_1="1">
+    <PackageStats package="" total_bugs="2" total_types="2" total_size="41" priority_2="1" priority_1="1">
+      <ClassStats class="QueueSortMain" sourceFile="QueueSortMain.java" interface="false" size="33" bugs="1" priority_1="1"/>
+      <ClassStats class="QueueSortMain$StringLT" sourceFile="QueueSortMain.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="117" invocations="508" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="3364" standardDeviationMicrosecondsPerInvocation="431"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="111" invocations="2" avgMicrosecondsPerInvocation="55851" maxMicrosecondsPerInvocation="102731" standardDeviationMicrosecondsPerInvocation="46880"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="97" invocations="511" avgMicrosecondsPerInvocation="191" maxMicrosecondsPerInvocation="10191" standardDeviationMicrosecondsPerInvocation="467"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="21" invocations="40" avgMicrosecondsPerInvocation="527" maxMicrosecondsPerInvocation="4837" standardDeviationMicrosecondsPerInvocation="1088"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="17" invocations="40" avgMicrosecondsPerInvocation="427" maxMicrosecondsPerInvocation="14548" standardDeviationMicrosecondsPerInvocation="2263"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1695927855480" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1695927855488" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1695928148333" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1695928986629" release="" codeSize="87" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1695929074454" release="" codeSize="40" numClasses="2"/>
+    <AppVersion sequence="5" timestamp="1695929205609" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1695929242897" release="" codeSize="87" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1695929461315" release="" codeSize="88" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1695929482443" release="" codeSize="87" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1695929591962" release="" codeSize="41" numClasses="2"/>
+  </History>
+</BugCollection>

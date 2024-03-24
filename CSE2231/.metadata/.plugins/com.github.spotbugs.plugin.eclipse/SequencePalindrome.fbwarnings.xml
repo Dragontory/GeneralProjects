@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="3" timestamp="1692734908393" analysisTimestamp="1692734907333" release="">
+  <Project projectName="SequencePalindrome">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\SequencePalindrome\bin\SequencePalindrome.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\SequencePalindrome\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\SequencePalindrome\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\SequencePalindrome\src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3">
+    <Class classname="SequencePalindrome">
+      <SourceLine classname="SequencePalindrome" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Class>
+    <Method classname="SequencePalindrome" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="SequencePalindrome" start="72" end="118" startBytecode="0" endBytecode="548" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Method>
+    <LocalVariable name="results" register="3" pc="581" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequencePalindrome" start="82" end="82" startBytecode="580" endBytecode="580" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    <SourceLine classname="SequencePalindrome" start="82" end="82" startBytecode="580" endBytecode="580" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="results"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="3">
+    <Class classname="SequencePalindrome">
+      <SourceLine classname="SequencePalindrome" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Class>
+    <Method classname="SequencePalindrome" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="SequencePalindrome" start="72" end="118" startBytecode="0" endBytecode="548" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Method>
+    <LocalVariable name="sCopy" register="6" pc="605" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="SequencePalindrome" start="88" end="88" startBytecode="603" endBytecode="603" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    <SourceLine classname="SequencePalindrome" start="88" end="88" startBytecode="603" endBytecode="603" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="sCopy"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="UC_USELESS_OBJECT" priority="2" rank="17" abbrev="UC" category="STYLE" first="3">
+    <Class classname="SequencePalindrome">
+      <SourceLine classname="SequencePalindrome" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Class>
+    <Method classname="SequencePalindrome" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="SequencePalindrome" start="72" end="118" startBytecode="0" endBytecode="1183" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+    </Method>
+    <String value="results"/>
+    <Type descriptor="[Z"/>
+    <SourceLine classname="SequencePalindrome" start="82" end="82" startBytecode="534" endBytecode="534" sourcefile="SequencePalindrome.java" sourcepath="SequencePalindrome.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 22 Aug 2023 16:08:27 -0400" total_classes="1" referenced_classes="19" total_bugs="3" total_size="51" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="1.81" clock_seconds="1.08" peak_mbytes="1128.97" alloc_mbytes="2048.00" gc_seconds="0.00" priority_2="3">
+    <PackageStats package="" total_bugs="3" total_types="1" total_size="51" priority_2="3">
+      <ClassStats class="SequencePalindrome" sourceFile="SequencePalindrome.java" interface="false" size="51" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="288" invocations="378" avgMicrosecondsPerInvocation="762" maxMicrosecondsPerInvocation="28927" standardDeviationMicrosecondsPerInvocation="2025"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="136" invocations="2" avgMicrosecondsPerInvocation="68171" maxMicrosecondsPerInvocation="119335" standardDeviationMicrosecondsPerInvocation="51164"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="112" invocations="379" avgMicrosecondsPerInvocation="295" maxMicrosecondsPerInvocation="1610" standardDeviationMicrosecondsPerInvocation="220"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindUselessObjects" totalMilliseconds="78" invocations="1" avgMicrosecondsPerInvocation="78566" maxMicrosecondsPerInvocation="78566" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="47" invocations="1" avgMicrosecondsPerInvocation="47939" maxMicrosecondsPerInvocation="47939" standardDeviationMicrosecondsPerInvocation="0"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="30" invocations="7" avgMicrosecondsPerInvocation="4292" maxMicrosecondsPerInvocation="18737" standardDeviationMicrosecondsPerInvocation="6085"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="28" invocations="74" avgMicrosecondsPerInvocation="391" maxMicrosecondsPerInvocation="1919" standardDeviationMicrosecondsPerInvocation="413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="28" invocations="19" avgMicrosecondsPerInvocation="1484" maxMicrosecondsPerInvocation="9703" standardDeviationMicrosecondsPerInvocation="2531"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="27" invocations="7" avgMicrosecondsPerInvocation="3969" maxMicrosecondsPerInvocation="15154" standardDeviationMicrosecondsPerInvocation="4878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="22" invocations="19" avgMicrosecondsPerInvocation="1184" maxMicrosecondsPerInvocation="12041" standardDeviationMicrosecondsPerInvocation="2666"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1692733632248" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1692733632248" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1692733798279" release="" codeSize="52" numClasses="1"/>
+  </History>
+</BugCollection>

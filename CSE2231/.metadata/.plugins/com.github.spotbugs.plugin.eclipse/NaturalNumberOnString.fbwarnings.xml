@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="1" timestamp="1694545801057" analysisTimestamp="1694545800600" release="">
+  <Project projectName="NaturalNumberOnString">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\NaturalNumberOnString\bin</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\NaturalNumberOnString\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\NaturalNumberOnString\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\NaturalNumberOnString\test</SrcDir>
+  </Project>
+  <BugInstance type="DB_DUPLICATE_BRANCHES" priority="2" rank="17" abbrev="DB" category="STYLE" first="1">
+    <Class classname="NaturalNumber3">
+      <SourceLine classname="NaturalNumber3" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    </Class>
+    <Method classname="NaturalNumber3" name="&lt;init&gt;" signature="(Lcomponents/naturalnumber/NaturalNumber;)V" isStatic="false">
+      <SourceLine classname="NaturalNumber3" start="97" end="107" startBytecode="0" endBytecode="179" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    </Method>
+    <SourceLine classname="NaturalNumber3" start="102" end="103" startBytecode="37" endBytecode="55" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    <SourceLine classname="NaturalNumber3" start="104" end="104" startBytecode="58" endBytecode="73" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="NaturalNumber3">
+      <SourceLine classname="NaturalNumber3" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    </Class>
+    <Method classname="NaturalNumber3" name="createNewRep" signature="()V" isStatic="false">
+      <SourceLine classname="NaturalNumber3" start="36" end="38" startBytecode="0" endBytecode="57" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    </Method>
+    <SourceLine classname="NaturalNumber3" start="36" end="36" startBytecode="5" endBytecode="5" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+    <SourceLine classname="NaturalNumber3" start="36" end="36" startBytecode="5" endBytecode="5" sourcefile="NaturalNumber3.java" sourcepath="NaturalNumber3.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 12 Sep 2023 15:10:00 -0400" total_classes="3" referenced_classes="28" total_bugs="2" total_size="229" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.44" clock_seconds="0.46" peak_mbytes="999.09" alloc_mbytes="2048.00" gc_seconds="0.01" priority_2="2">
+    <PackageStats package="" total_bugs="2" total_types="3" total_size="229" priority_2="2">
+      <ClassStats class="NaturalNumber3" sourceFile="NaturalNumber3.java" interface="false" size="76" bugs="2" priority_2="2"/>
+      <ClassStats class="NaturalNumber3Test" sourceFile="NaturalNumber3Test.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="NaturalNumberTest" sourceFile="NaturalNumberTest.java" interface="false" size="134" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="102" invocations="402" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="3499" standardDeviationMicrosecondsPerInvocation="495"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="79" invocations="2" avgMicrosecondsPerInvocation="39525" maxMicrosecondsPerInvocation="69640" standardDeviationMicrosecondsPerInvocation="30115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="63" invocations="405" avgMicrosecondsPerInvocation="157" maxMicrosecondsPerInvocation="874" standardDeviationMicrosecondsPerInvocation="115"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="22" invocations="28" avgMicrosecondsPerInvocation="801" maxMicrosecondsPerInvocation="6562" standardDeviationMicrosecondsPerInvocation="1569"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="15" invocations="114" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="1246" standardDeviationMicrosecondsPerInvocation="166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="14" invocations="28" avgMicrosecondsPerInvocation="509" maxMicrosecondsPerInvocation="4580" standardDeviationMicrosecondsPerInvocation="915"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="12" invocations="367" avgMicrosecondsPerInvocation="34" maxMicrosecondsPerInvocation="569" standardDeviationMicrosecondsPerInvocation="59"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1694545801057" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

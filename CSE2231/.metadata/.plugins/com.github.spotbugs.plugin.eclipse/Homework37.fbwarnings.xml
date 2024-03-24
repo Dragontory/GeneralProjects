@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="7" timestamp="1701804349268" analysisTimestamp="1701804349029" release="">
+  <Project projectName="Homework37">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework37\bin\EmailAccount1.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework37\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework37\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework37\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="7">
+    <Class classname="EmailAccount1">
+      <SourceLine classname="EmailAccount1" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Class>
+    <Method classname="EmailAccount1" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="EmailAccount1" start="49" end="68" startBytecode="0" endBytecode="53" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    </Method>
+    <LocalVariable name="temp" register="4" pc="57" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="EmailAccount1" start="59" end="59" startBytecode="54" endBytecode="54" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    <SourceLine classname="EmailAccount1" start="59" end="59" startBytecode="54" endBytecode="54" sourcefile="EmailAccount1.java" sourcepath="EmailAccount1.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.COPY_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_INCREMENT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="temp"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.SINGLE_DEAD_INCREMENT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 5 Dec 2023 14:25:49 -0500" total_classes="1" referenced_classes="16" total_bugs="1" total_size="28" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.12" clock_seconds="0.25" peak_mbytes="1042.80" alloc_mbytes="2048.00" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="28" priority_2="1">
+      <ClassStats class="EmailAccount1" sourceFile="EmailAccount1.java" interface="false" size="28" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="54" invocations="376" avgMicrosecondsPerInvocation="145" maxMicrosecondsPerInvocation="2153" standardDeviationMicrosecondsPerInvocation="266"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="48" invocations="2" avgMicrosecondsPerInvocation="24198" maxMicrosecondsPerInvocation="42641" standardDeviationMicrosecondsPerInvocation="18442"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="377" avgMicrosecondsPerInvocation="110" maxMicrosecondsPerInvocation="720" standardDeviationMicrosecondsPerInvocation="87"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="13" invocations="16" avgMicrosecondsPerInvocation="826" maxMicrosecondsPerInvocation="4867" standardDeviationMicrosecondsPerInvocation="1426"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1701803511110" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1701803511119" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1701803525335" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1701803933655" release="" codeSize="4" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1701803940382" release="" codeSize="10" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1701804314434" release="" codeSize="29" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1701804319939" release="" codeSize="29" numClasses="1"/>
+  </History>
+</BugCollection>

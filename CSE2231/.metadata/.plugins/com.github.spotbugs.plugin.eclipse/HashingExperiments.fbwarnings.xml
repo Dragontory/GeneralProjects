@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="4" timestamp="1694720449767" analysisTimestamp="1694720449149" release="">
+  <Project projectName="HashingExperiments">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\HashingExperiments\bin\HashingExploration.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\HashingExperiments\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\HashingExperiments\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\HashingExperiments\test</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 14 Sep 2023 15:40:49 -0400" total_classes="1" referenced_classes="20" total_bugs="0" total_size="49" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.64" clock_seconds="0.62" peak_mbytes="1052.85" alloc_mbytes="2048.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="49">
+      <ClassStats class="HashingExploration" sourceFile="HashingExploration.java" interface="false" size="49" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="223" invocations="380" avgMicrosecondsPerInvocation="587" maxMicrosecondsPerInvocation="9179" standardDeviationMicrosecondsPerInvocation="1139"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="93" invocations="2" avgMicrosecondsPerInvocation="46909" maxMicrosecondsPerInvocation="78915" standardDeviationMicrosecondsPerInvocation="32005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="79" invocations="381" avgMicrosecondsPerInvocation="207" maxMicrosecondsPerInvocation="1125" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="29" invocations="46" avgMicrosecondsPerInvocation="651" maxMicrosecondsPerInvocation="22402" standardDeviationMicrosecondsPerInvocation="3258"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="20" invocations="20" avgMicrosecondsPerInvocation="1030" maxMicrosecondsPerInvocation="7054" standardDeviationMicrosecondsPerInvocation="1852"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="16" invocations="75" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="945" standardDeviationMicrosecondsPerInvocation="201"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1694718235970" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1694718235982" release="" codeSize="46" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1694718390286" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1694718884501" release="" codeSize="49" numClasses="1"/>
+  </History>
+</BugCollection>

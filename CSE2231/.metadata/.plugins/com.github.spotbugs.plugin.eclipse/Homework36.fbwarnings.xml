@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="4" timestamp="1701368449408" analysisTimestamp="1701368448953" release="">
+  <Project projectName="Homework36">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework36\bin\Homework36.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework36\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework36\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework36\src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="3">
+    <Class classname="Homework36">
+      <SourceLine classname="Homework36" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Class>
+    <Method classname="Homework36" name="main2" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Homework36" start="56" end="70" startBytecode="0" endBytecode="210" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Homework36" start="56" end="56" startBytecode="11" endBytecode="11" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    <SourceLine classname="Homework36" start="56" end="56" startBytecode="11" endBytecode="11" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="3">
+    <Class classname="Homework36">
+      <SourceLine classname="Homework36" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Class>
+    <Method classname="Homework36" name="main2" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Homework36" start="56" end="70" startBytecode="0" endBytecode="210" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="Homework36" start="58" end="58" startBytecode="33" endBytecode="33" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    <SourceLine classname="Homework36" start="58" end="58" startBytecode="33" endBytecode="33" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="3">
+    <Class classname="Homework36">
+      <SourceLine classname="Homework36" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Class>
+    <Method classname="Homework36" name="main3" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Homework36" start="80" end="108" startBytecode="0" endBytecode="444" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Homework36" start="86" end="86" startBytecode="17" endBytecode="17" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    <SourceLine classname="Homework36" start="86" end="86" startBytecode="17" endBytecode="17" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="3">
+    <Class classname="Homework36">
+      <SourceLine classname="Homework36" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Class>
+    <Method classname="Homework36" name="main3" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Homework36" start="80" end="108" startBytecode="0" endBytecode="444" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="Homework36" start="88" end="88" startBytecode="37" endBytecode="37" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+    <SourceLine classname="Homework36" start="88" end="88" startBytecode="37" endBytecode="37" sourcefile="Homework36.java" sourcepath="Homework36.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="2">
+    <Class classname="Question1">
+      <SourceLine classname="Question1" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Class>
+    <Method classname="Question1" name="main2" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Question1" start="44" end="58" startBytecode="0" endBytecode="210" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Question1" start="44" end="44" startBytecode="11" endBytecode="11" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    <SourceLine classname="Question1" start="44" end="44" startBytecode="11" endBytecode="11" sourcefile="Question1.java" sourcepath="Question1.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="2">
+    <Class classname="Question1">
+      <SourceLine classname="Question1" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Class>
+    <Method classname="Question1" name="main2" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Question1" start="44" end="58" startBytecode="0" endBytecode="210" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="Question1" start="46" end="46" startBytecode="33" endBytecode="33" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    <SourceLine classname="Question1" start="46" end="46" startBytecode="33" endBytecode="33" sourcefile="Question1.java" sourcepath="Question1.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="2">
+    <Class classname="Question1">
+      <SourceLine classname="Question1" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Class>
+    <Method classname="Question1" name="main3" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Question1" start="62" end="90" startBytecode="0" endBytecode="444" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="60" end="61" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Question1" start="68" end="68" startBytecode="17" endBytecode="17" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    <SourceLine classname="Question1" start="68" end="68" startBytecode="17" endBytecode="17" sourcefile="Question1.java" sourcepath="Question1.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="2">
+    <Class classname="Question1">
+      <SourceLine classname="Question1" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Class>
+    <Method classname="Question1" name="main3" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Question1" start="62" end="90" startBytecode="0" endBytecode="444" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="66" end="67" startBytecode="0" endBytecode="68" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="Question1" start="70" end="70" startBytecode="37" endBytecode="37" sourcefile="Question1.java" sourcepath="Question1.java"/>
+    <SourceLine classname="Question1" start="70" end="70" startBytecode="37" endBytecode="37" sourcefile="Question1.java" sourcepath="Question1.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 30 Nov 2023 13:20:48 -0500" total_classes="1" referenced_classes="27" total_bugs="8" total_size="44" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.67" clock_seconds="0.46" peak_mbytes="664.10" alloc_mbytes="2048.00" gc_seconds="0.02" priority_1="8">
+    <PackageStats package="" total_bugs="8" total_types="2" total_size="44" priority_1="8">
+      <ClassStats class="Homework36" sourceFile="Homework36.java" interface="false" size="44" bugs="4" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="164" invocations="416" avgMicrosecondsPerInvocation="394" maxMicrosecondsPerInvocation="19065" standardDeviationMicrosecondsPerInvocation="1174"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="62" invocations="417" avgMicrosecondsPerInvocation="150" maxMicrosecondsPerInvocation="811" standardDeviationMicrosecondsPerInvocation="106"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="61" invocations="2" avgMicrosecondsPerInvocation="30981" maxMicrosecondsPerInvocation="54477" standardDeviationMicrosecondsPerInvocation="23496"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="20" invocations="27" avgMicrosecondsPerInvocation="772" maxMicrosecondsPerInvocation="4381" standardDeviationMicrosecondsPerInvocation="1121"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="15" invocations="27" avgMicrosecondsPerInvocation="571" maxMicrosecondsPerInvocation="4471" standardDeviationMicrosecondsPerInvocation="883"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="15" invocations="86" avgMicrosecondsPerInvocation="179" maxMicrosecondsPerInvocation="1973" standardDeviationMicrosecondsPerInvocation="247"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1701367720449" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1701367720461" release="" codeSize="9" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1701368355371" release="" codeSize="43" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1701368412893" release="" codeSize="43" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Fixed the rest of the body. Code should be functional.</CommitComment>
+	<CommitComment>Removed OSU Components and Implemented Java standard components. Still needs fixing.</CommitComment>
+	<CommitComment>Initial import.</CommitComment>
+	<CommitComment>cleaned up code, added method header and requirements.</CommitComment>
+	<CommitComment>import java.util.Comparator;
+
+import components.map.Map;
+import components.map.Map1L;
+import components.queue.Queue;
+import components.queue.Queue1L;
+import components.set.Set;
+import components.set.Set1L;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+import components.sortingmachine.SortingMachine;
+import components.sortingmachine.SortingMachine1L;
+
+/**
+ * Tag Cloud Generator.
+ *
+ * @author Tory Yang, Ryan Liu
+ */
+public final class TagCloudGenerator {
+
+    /**
+     * No argument constructor--private to prevent instantiation.
+     */
+    private TagCloudGenerator() {
+        // no code needed here
+    }
+
+    /**
+     * Compare {@code String}s in lexicographic order.
+     */
+    private static class StringLTM
+            implements Comparator&lt;Map.Pair&lt;String, Integer&gt;&gt; {
+        @Override
+        public int compare(Map.Pair&lt;String, Integer&gt; o1,
+                Map.Pair&lt;String, Integer&gt; o2) {
+            return o1.key().compareTo(o2.key()); // sort a-z, &apos;A&apos; is first
+        }
+    }
+
+    /**
+     * Compare {@code Integer}s in lexicographic order.
+     */
+    private static class IntegerLT
+            implements Comparator&lt;Map.Pair&lt;String, Integer&gt;&gt; {
+        @Override
+        public int compare(Map.Pair&lt;String, Integer&gt; o1,
+                Map.Pair&lt;String, Integer&gt; o2) {
+            return o2.value().compareTo(o1.value()); // sort highest quantity first
+        }
+    }
+
+    /**
+     * Generates the set of characters in the given {@code String} into the
+     * given {@code Set}.
+     *
+     * @param str
+     *            the given {@code String}
+     * @param charSet
+     *            the {@code Set} to be replaced
+     * @replaces charSet
+     * @ensures charSet = entries(str)
+     */
+    private static void generateElements(String str, Set&lt;Character&gt; charSet) {
+        assert str != null : &quot;Violation of: str is not null&quot;;
+        assert charSet != null : &quot;Violation of: charSet is not null&quot;;
+
+        int i = 0;
+        /*
+         * loop around and add characters to the set one by one
+         */
+        while (i &lt; str.length()) {
+            if (!charSet.contains(str.charAt(i))) {
+                charSet.add(str.charAt(i));
+            }
+            i++;
+
+        }
+    }
+
+    /**
+     * Returns the first &quot;word&quot; (maximal length string of characters not in
+     * {@code separators}) or &quot;separator string&quot; (maximal length string of
+     * characters in {@code separators}) in the given {@code text} starting at
+     * the given {@code position}.
+     *
+     * @param text
+     *            the {@code String} from which to get the word or separator
+     *            string
+     * @param position
+     *            the starting index
+     * @param separators
+     *            the {@code Set} of separator characters
+     * @return the first word or separator string found in {@code text} starting
+     *         at index {@code position}
+     * @requires 0 &lt;= position &lt; |text|
+     * @ensures &lt;pre&gt;
+     * nextWordOrSeparator =
+     *   text[position, position + |nextWordOrSeparator|)  and
+     * if entries(text[position, position + 1)) intersection separators = {}
+     * then
+     *   entries(nextWordOrSeparator) intersection separators = {}  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      intersection separators /= {})
+     * else
+     *   entries(nextWordOrSeparator) is subset of separators  and
+     *   (position + |nextWordOrSeparator| = |text|  or
+     *    entries(text[position, position + |nextWordOrSeparator| + 1))
+     *      is not subset of separators)
+     * &lt;/pre&gt;
+     */
+    private static String nextWordOrSeparator(String text, int position,
+            Set&lt;Character&gt; separators) {
+        assert text != null : &quot;Violation of: text is not null&quot;;
+        assert separators != null : &quot;Violation of: separators is not null&quot;;
+        assert 0 &lt;= position : &quot;Violation of: 0 &lt;= position&quot;;
+        assert position &lt; text.length() : &quot;Violation of: position &lt; |text|&quot;;
+
+        String positionText = text.substring(position);
+        char nextChar;
+        int i = 0;
+        String returnedString = &quot;&quot;;
+        boolean separator;
+        /*
+         * check which, either sep or word
+         */
+        if (separators.contains(positionText.charAt(0))) {
+            separator = true;
+        } else {
+            separator = false;
+        }
+        if (separator) { // separator
+            while (separator &amp;&amp; i &lt; positionText.length()) {
+
+                nextChar = positionText.charAt(i);
+                separator = separators.contains(nextChar);
+                if (separator) {
+                    returnedString += nextChar;
+                }
+                i++;
+
+            }
+        } else { // word
+            while (!separator &amp;&amp; i &lt; positionText.length()) {
+                nextChar = positionText.charAt(i);
+                separator = separators.contains(nextChar);
+                if (!separator) {
+                    returnedString += nextChar;
+                }
+                i++;
+            }
+        }
+
+        return returnedString;
+    }
+
+    /**
+     * Prints the index html page&apos;s header.
+     *
+     * @param fout
+     *            the index html file that is being written to
+     * @param file
+     *            the name of the file that is being read
+     * @param numWords
+     *            the top number of words to print out
+     */
+    private static void printIndexHeader(SimpleWriter fout, String file,
+            int numWords) {
+        // Print out the headers for the index file
+        fout.println(&quot;&lt;html&gt;&quot;);
+        fout.println(&quot;&lt;head&gt;&quot;);
+        fout.println(
+                &quot;&lt;title&gt; Top &quot; + numWords + &quot; words in &quot; + file + &quot; &lt;/title&gt;&quot;);
+        fout.print(
+                &quot;&lt;link href=\&quot;http://web.cse.ohio-state.edu/software/2231/web-sw2/&quot;);
+        fout.print(
+                &quot;assignments/projects/tag-cloud-generator/data/tagcloud.css\&quot; &quot;);
+        fout.println(&quot;rel=\&quot;stylesheet\&quot; type=\&quot;text/css\&quot;&gt; &quot;);
+        fout.println(
+                &quot;&lt;link href=\&quot;tagcloud.css\&quot; rel=\&quot;stylesheet\&quot; type=\&quot;text/css\&quot;&gt;&quot;);
+        fout.println(&quot;&lt;/head&gt;&quot;);
+        fout.println(&quot;&lt;body&gt;&quot;);
+        // file name required!
+        fout.println(&quot;&lt;h2&gt; Top &quot; + numWords + &quot; words in &quot; + file + &quot; &lt;/h2&gt;&quot;);
+        fout.println(&quot;&lt;hr&gt;&quot;);
+    }
+
+    /**
+     * Gets one line at a time from {@code in} until end of input, and puts them
+     * into the queue {@code words} after changing to lower case and splitting
+     * by word.
+     *
+     * @param in
+     *            the source of the lines to be input
+     * @param words
+     *            the queue words are added to
+     * @param separators
+     *            the set of characters to be used as separators
+     * @updates in
+     * @replaces words
+     * @requires in.is_open
+     * @ensures &lt;pre&gt;
+     * in.is_open  and
+     * in.ext_name = #in.ext_name  and
+     * in.content = &quot;&quot;  and
+     * words = WORDS(#in.content)
+     * &lt;/pre&gt;
+     */
+    private static void getWordsFromInput(SimpleReader in, Queue&lt;String&gt; words,
+            Set&lt;Character&gt; separators) {
+        assert in != null : &quot;Violation of: in is not null&quot;;
+        assert words != null : &quot;Violation of: words is not null&quot;;
+        assert in.isOpen() : &quot;Violation of: in.is_open&quot;;
+
+        int position = 0;
+        String str;
+        while (!in.atEOS()) { // keep scanning until end of file
+            str = in.nextLine();
+            str = str.toLowerCase();
+            position = 0;
+            /*
+             * this actually adds the words to the queue
+             */
+            while (position &lt; str.length()) {
+                String token = nextWordOrSeparator(str, position, separators);
+                if (!separators.contains(token.charAt(0))) {
+                    words.enqueue(token);
+                }
+                position += token.length();
+            }
+
+        }
+    }
+
+    /**
+     * Prints out the body of the table of words and counts into @code fout.
+     *
+     * @param map
+     *            the map to be written to
+     * @param words
+     *            the queue of words, sorted
+     * @requires {@code words} has been sorted properly
+     *
+     * @replaces words
+     */
+    private static void createMap(Map&lt;String, Integer&gt; map,
+            Queue&lt;String&gt; words) {
+        while (words.length() &gt; 0) {
+            String word = words.dequeue();
+            int quantity = 1;
+            while (words.length() &gt; 0 &amp;&amp; word.equals(words.front())) {
+                words.dequeue();
+                quantity++;
+            }
+
+            if (map.hasKey(word)) {
+                map.replaceValue(word, map.value(word) + quantity);
+            } else {
+                map.add(word, quantity);
+            }
+        }
+
+    }
+
+    /**
+     * Sorts the top number of words of the user&apos;s choosing alphabetically.
+     * Prints out the body of the table and counts into @code fout.
+     *
+     * @param fout
+     *            the index html file that is being written to
+     * @param ssm
+     *            the sorting machine containing the words
+     * @param numWords
+     *            the top number of words to print out
+     * @param maxCt
+     *            the count of the word that appears the most
+     * @param minCt
+     *            the count of the word that appears the least
+     *
+     * @updates ssm
+     */
+    private static void generateBody(SimpleWriter fout,
+            SortingMachine&lt;Map.Pair&lt;String, Integer&gt;&gt; ssm, int numWords,
+            int maxCt, int minCt) {
+        // max count and min count for the tag cloud
+
+        ssm.changeToExtractionMode();
+        int j = 0;
+        double maxValue = maxCt - minCt;
+        final int num1 = 37, num2 = 11;
+
+        while (j &lt; numWords) {
+            Map.Pair&lt;String, Integer&gt; mp = ssm.removeFirst();
+
+            // first part will be decimal 0 to 1, so multiply by 37 and shift 11
+            // to get f11-f48 from stylesheet css (cast to int)
+            int fontSize = (int) ((mp.value() - minCt) / maxValue * num1
+                    + num2);
+            fout.print(&quot;&lt;span style=\&quot;cursor:default\&quot; class = \&quot;f&quot; + fontSize
+                    + &quot;\&quot; &quot;);
+            fout.println(
+                    &quot;title = \&quot;&quot; + mp.value() + &quot;\&quot;&gt;&quot; + mp.key() + &quot;&lt;/span&gt;&quot;);
+            j++;
+        }
+
+        fout.println(&quot;&lt;/p&gt;&quot;);
+        fout.println(&quot;&lt;/div&gt;&quot;);
+        fout.println(&quot;&lt;/body&gt;&quot;);
+        fout.println(&quot;&lt;/html&gt;&quot;);
+
+    }
+
+    /**
+     * Main method.
+     *
+     * @param args
+     *            the command line arguments; unused here
+     */
+    public static void main(String[] args) {
+
+        /*
+         * Define separator characters for test
+         */
+        final String separatorStr = &quot; \t\n\r,-.!?[]&apos;;:/()&quot;;
+        Set&lt;Character&gt; separatorSet = new Set1L&lt;&gt;();
+        generateElements(separatorStr, separatorSet);
+
+        /*
+         * Open input and output streams
+         */
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+
+        /*
+         * Request file names to output and input to, unedited
+         */
+        out.print(
+                &quot;Enter the file name to output to, including the .html extension: &quot;);
+        String fileName = in.nextLine();
+        SimpleWriter fout = new SimpleWriter1L(fileName);
+
+        out.print(
+                &quot;Enter the file name to read input from, including the extension: &quot;);
+        fileName = in.nextLine();
+        SimpleReader fin = new SimpleReader1L(fileName);
+
+        Queue&lt;String&gt; lines = new Queue1L&lt;&gt;(); // new queue for words of input file
+        getWordsFromInput(fin, lines, separatorSet); // call method to add words
+
+        // checks for proper input
+        out.print(&quot;Enter the top __ words to register: &quot;);
+        int numWords = in.nextInteger();
+        while (numWords &lt; 0 || numWords &gt; lines.length()) {
+            out.println(&quot;Invalid Input (input cannot be negative or &quot;
+                    + &quot;greater than the word count).&quot;);
+            out.print(&quot;Please enter a valid input&quot;);
+            numWords = in.nextInteger();
+        }
+
+        printIndexHeader(fout, fileName, numWords); // print the header of the html file
+
+        Map&lt;String, Integer&gt; map1 = new Map1L&lt;&gt;();
+        createMap(map1, lines); // words with quantity
+        Comparator&lt;Map.Pair&lt;String, Integer&gt;&gt; ci = new IntegerLT();
+        SortingMachine&lt;Map.Pair&lt;String, Integer&gt;&gt; si = new SortingMachine1L&lt;&gt;(
+                ci);
+        while (map1.size() &gt; 0) {
+            si.add(map1.removeAny());
+        }
+        si.changeToExtractionMode();
+        int i = 0;
+        int minCount = 0;
+        int maxCount = 0;
+        while (i &lt; numWords) {
+
+            Map.Pair&lt;String, Integer&gt; mp = si.removeFirst();
+            map1.add(mp.key(), mp.value());
+
+            if (i == 0) {
+                maxCount = mp.value();
+            } else if (i == numWords - 1) {
+                minCount = mp.value();
+            }
+            i++;
+        }
+
+        // comparator string map, sorting machine string map
+        Comparator&lt;Map.Pair&lt;String, Integer&gt;&gt; csm = new StringLTM();
+        SortingMachine&lt;Map.Pair&lt;String, Integer&gt;&gt; ssm = new SortingMachine1L&lt;&gt;(
+                csm);
+        fout.println(&quot;&lt;div class = \&quot;cdiv\&quot;&gt;&quot;);
+        fout.println(&quot;&lt;p class = \&quot;cbox\&quot;&gt;&quot;);
+
+        while (map1.size() &gt; 0) {
+            ssm.add(map1.removeAny());
+        }
+        generateBody(fout, ssm, numWords, maxCount, minCount);
+
+        /*
+         * Close input and output streams
+         */
+        in.close();
+        out.close();
+        fin.close();
+        fout.close();
+    }
+}</CommitComment>
+	<CommitComment>Cleaned up code, added method headers. Added requirements.</CommitComment>
+	<CommitComment>Cleaned up, added method headers. Added functionality to match the requirements.</CommitComment>
+	<CommitComment>Cleaned up Project. Added Method header. </CommitComment>
+	<CommitComment>Fixed HTML stuff</CommitComment>
+	<CommitComment>Fixed HTML stuff. </CommitComment>
+</CommitComments>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="9" timestamp="1694800968877" analysisTimestamp="1694800968558" release="">
+  <Project projectName="Homework11">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework11\bin\PhoneNumber.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework11\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework11\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework11\src</SrcDir>
+  </Project>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1" last="6" removedByChange="true">
+    <Class classname="PhoneNumber">
+      <SourceLine classname="PhoneNumber" sourcefile="PhoneNumber.java" sourcepath="PhoneNumber.java"/>
+    </Class>
+    <Field classname="PhoneNumber" name="rep" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="PhoneNumber" sourcefile="PhoneNumber.java" sourcepath="PhoneNumber.java"/>
+    </Field>
+    <SourceLine classname="PhoneNumber" start="26" end="26" startBytecode="6" endBytecode="6" sourcefile="PhoneNumber.java" sourcepath="PhoneNumber.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 15 Sep 2023 14:02:48 -0400" total_classes="1" referenced_classes="14" total_bugs="0" total_size="14" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.44" clock_seconds="0.32" peak_mbytes="969.61" alloc_mbytes="2048.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="14">
+      <ClassStats class="PhoneNumber" sourceFile="PhoneNumber.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="92" invocations="367" avgMicrosecondsPerInvocation="251" maxMicrosecondsPerInvocation="13463" standardDeviationMicrosecondsPerInvocation="827"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="57" invocations="368" avgMicrosecondsPerInvocation="156" maxMicrosecondsPerInvocation="1069" standardDeviationMicrosecondsPerInvocation="130"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="52" invocations="2" avgMicrosecondsPerInvocation="26359" maxMicrosecondsPerInvocation="43651" standardDeviationMicrosecondsPerInvocation="17292"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="22" invocations="14" avgMicrosecondsPerInvocation="1622" maxMicrosecondsPerInvocation="17369" standardDeviationMicrosecondsPerInvocation="4395"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="14" invocations="14" avgMicrosecondsPerInvocation="1041" maxMicrosecondsPerInvocation="3736" standardDeviationMicrosecondsPerInvocation="1280"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1694793480683" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1694793480688" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1694793482533" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1694793499781" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1694793508740" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1694793510713" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1694793511719" release="" codeSize="8" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1694799964246" release="" codeSize="14" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1694799980818" release="" codeSize="14" numClasses="1"/>
+  </History>
+</BugCollection>

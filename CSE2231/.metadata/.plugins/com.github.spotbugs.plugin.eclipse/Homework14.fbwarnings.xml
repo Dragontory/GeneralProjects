@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="4" timestamp="1695322828654" analysisTimestamp="1695322825026" release="">
+  <Project projectName="Homework14">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework14\bin\Homework14.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework14\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework14\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework14\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 21 Sep 2023 15:00:24 -0400" total_classes="1" referenced_classes="18" total_bugs="0" total_size="24" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="3.89" clock_seconds="3.67" peak_mbytes="685.67" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="24">
+      <ClassStats class="Homework14" sourceFile="Homework14.java" interface="false" size="24" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="1604" invocations="2" avgMicrosecondsPerInvocation="802058" maxMicrosecondsPerInvocation="1071568" standardDeviationMicrosecondsPerInvocation="269510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="424" invocations="337" avgMicrosecondsPerInvocation="1260" maxMicrosecondsPerInvocation="101895" standardDeviationMicrosecondsPerInvocation="5975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="138" invocations="42" avgMicrosecondsPerInvocation="3301" maxMicrosecondsPerInvocation="95355" standardDeviationMicrosecondsPerInvocation="14875"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="104" invocations="338" avgMicrosecondsPerInvocation="308" maxMicrosecondsPerInvocation="3823" standardDeviationMicrosecondsPerInvocation="348"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="84" invocations="18" avgMicrosecondsPerInvocation="4714" maxMicrosecondsPerInvocation="42216" standardDeviationMicrosecondsPerInvocation="10619"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="84" invocations="3" avgMicrosecondsPerInvocation="28113" maxMicrosecondsPerInvocation="80155" standardDeviationMicrosecondsPerInvocation="36824"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="84" invocations="47" avgMicrosecondsPerInvocation="1791" maxMicrosecondsPerInvocation="22157" standardDeviationMicrosecondsPerInvocation="3487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="81" invocations="18" avgMicrosecondsPerInvocation="4552" maxMicrosecondsPerInvocation="32282" standardDeviationMicrosecondsPerInvocation="9590"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1695308085894" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1695308085899" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1695308340189" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1695308387976" release="" codeSize="24" numClasses="1"/>
+  </History>
+</BugCollection>

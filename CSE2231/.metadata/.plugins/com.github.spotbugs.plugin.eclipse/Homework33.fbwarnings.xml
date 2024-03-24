@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="4" timestamp="1700161920613" analysisTimestamp="1700161920331" release="">
+  <Project projectName="Homework33">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework33\bin\WaitingLineSecondary.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework33\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework33\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\Homework33\src</SrcDir>
+  </Project>
+  <BugInstance type="EQ_UNUSUAL" priority="2" rank="17" abbrev="Eq" category="STYLE" first="4">
+    <Class classname="WaitingLineSecondary">
+      <SourceLine classname="WaitingLineSecondary" sourcefile="WaitingLineSecondary.java" sourcepath="WaitingLineSecondary.java"/>
+    </Class>
+    <Method classname="WaitingLineSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="WaitingLineSecondary" start="29" end="29" startBytecode="0" endBytecode="69" sourcefile="WaitingLineSecondary.java" sourcepath="WaitingLineSecondary.java"/>
+    </Method>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 16 Nov 2023 14:12:00 -0500" total_classes="1" referenced_classes="14" total_bugs="1" total_size="21" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.08" clock_seconds="0.28" peak_mbytes="585.30" alloc_mbytes="2048.00" gc_seconds="0.01" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="21" priority_2="1">
+      <ClassStats class="WaitingLineSecondary" sourceFile="WaitingLineSecondary.java" interface="false" size="21" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="62" invocations="358" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="5625" standardDeviationMicrosecondsPerInvocation="453"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="52" invocations="2" avgMicrosecondsPerInvocation="26184" maxMicrosecondsPerInvocation="47054" standardDeviationMicrosecondsPerInvocation="20869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="39" invocations="359" avgMicrosecondsPerInvocation="109" maxMicrosecondsPerInvocation="588" standardDeviationMicrosecondsPerInvocation="86"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="12" invocations="14" avgMicrosecondsPerInvocation="907" maxMicrosecondsPerInvocation="4173" standardDeviationMicrosecondsPerInvocation="1383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="12" invocations="14" avgMicrosecondsPerInvocation="905" maxMicrosecondsPerInvocation="10689" standardDeviationMicrosecondsPerInvocation="2719"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="11" invocations="77" avgMicrosecondsPerInvocation="149" maxMicrosecondsPerInvocation="745" standardDeviationMicrosecondsPerInvocation="142"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1700160552600" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1700160552604" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1700160571172" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1700160758467" release="" codeSize="3" numClasses="1"/>
+  </History>
+</BugCollection>

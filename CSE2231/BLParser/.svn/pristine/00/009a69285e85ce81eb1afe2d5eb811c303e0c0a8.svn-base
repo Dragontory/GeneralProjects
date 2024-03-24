@@ -1,0 +1,28 @@
+PROGRAM Test IS
+
+  INSTRUCTION one IS
+     move
+     turnleft
+  END one
+  
+  INSTRUCTION one IS
+    turnleft
+    IF next-is-not-empty THEN
+      turnleft
+    ELSE
+      turnleft
+      turnleft
+    END IF
+  END one
+
+BEGIN
+  infect
+  WHILE true DO
+    one
+    IF next-is-empty THEN
+      move
+    END IF
+    one
+    one
+  END WHILE
+END Test

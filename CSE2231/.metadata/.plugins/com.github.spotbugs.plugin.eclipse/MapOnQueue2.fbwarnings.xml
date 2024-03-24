@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="16" timestamp="1694547618471" analysisTimestamp="1694547618020" release="">
+  <Project projectName="MapOnQueue2">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\MapOnQueue2\bin\Map2.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\MapOnQueue2\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\MapOnQueue2\src</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\MapOnQueue2\test</SrcDir>
+  </Project>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="3" last="6" removedByChange="true">
+    <Class classname="Map2">
+      <SourceLine classname="Map2" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Class>
+    <Method classname="Map2" name="add" signature="(Ljava/lang/Object;Ljava/lang/Object;)V" isStatic="false">
+      <SourceLine classname="Map2" start="137" end="145" startBytecode="0" endBytecode="197" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Method>
+    <SourceLine classname="Map2" start="143" end="143" startBytecode="67" endBytecode="67" sourcefile="Map2.java" sourcepath="Map2.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="5" last="6" removedByChange="true">
+    <Class classname="Map2">
+      <SourceLine classname="Map2" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Class>
+    <Method classname="Map2" name="remove" signature="(Ljava/lang/Object;)Lcomponents/map/Map$Pair;" isStatic="false">
+      <SourceLine classname="Map2" start="149" end="153" startBytecode="0" endBytecode="173" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Method>
+    <SourceLine classname="Map2" start="152" end="152" startBytecode="46" endBytecode="46" sourcefile="Map2.java" sourcepath="Map2.java"/>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" rank="9" abbrev="IL" category="CORRECTNESS" first="6" last="6" removedByChange="true">
+    <Class classname="Map2">
+      <SourceLine classname="Map2" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Class>
+    <Method classname="Map2" name="removeAny" signature="()Lcomponents/map/Map$Pair;" isStatic="false">
+      <SourceLine classname="Map2" start="158" end="161" startBytecode="0" endBytecode="126" sourcefile="Map2.java" sourcepath="Map2.java"/>
+    </Method>
+    <SourceLine classname="Map2" start="160" end="160" startBytecode="24" endBytecode="24" sourcefile="Map2.java" sourcepath="Map2.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 12 Sep 2023 15:40:18 -0400" total_classes="1" referenced_classes="29" total_bugs="0" total_size="76" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.62" clock_seconds="0.45" peak_mbytes="1060.91" alloc_mbytes="2048.00" gc_seconds="0.01">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="76">
+      <ClassStats class="Map2" sourceFile="Map2.java" interface="false" size="76" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="146" invocations="429" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="77854" standardDeviationMicrosecondsPerInvocation="3749"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="99" invocations="426" avgMicrosecondsPerInvocation="232" maxMicrosecondsPerInvocation="5634" standardDeviationMicrosecondsPerInvocation="518"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="85" invocations="2" avgMicrosecondsPerInvocation="42999" maxMicrosecondsPerInvocation="78004" standardDeviationMicrosecondsPerInvocation="35005"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="14" invocations="392" avgMicrosecondsPerInvocation="36" maxMicrosecondsPerInvocation="751" standardDeviationMicrosecondsPerInvocation="74"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1694546134298" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1694546134298" release="" codeSize="86" numClasses="3"/>
+    <AppVersion sequence="2" timestamp="1694546242828" release="" codeSize="69" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1694546334019" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1694546489175" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1694546493857" release="" codeSize="71" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1694546536735" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1694546650266" release="" codeSize="69" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1694546660674" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1694546755762" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1694546784483" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1694546996194" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1694547065592" release="" codeSize="80" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1694547130514" release="" codeSize="95" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1694547212468" release="" codeSize="95" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1694547226956" release="" codeSize="95" numClasses="1"/>
+  </History>
+</BugCollection>

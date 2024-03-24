@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\toryy\Downloads\EmailAccounts.zip"/>
+			<item value="C:\Users\toryy\Downloads\JavaIOExplorations.zip"/>
+			<item value="C:\Users\toryy\Downloads\JCFExplorations.zip"/>
+			<item value="C:\Users\toryy\Downloads\BLParser.zip"/>
+			<item value="C:\Users\toryy\Downloads\BugsWorldVMInterpreter.zip"/>
+			<item value="C:\Users\toryy\Downloads\ExpressionEvaluator.zip"/>
+			<item value="C:\Users\toryy\Downloads\ProgramAndStatement.zip"/>
+			<item value="C:\Users\toryy\Downloads\Tokenizer.zip"/>
+			<item value="C:\Users\toryy\Downloads\StatementPrettyPrint.zip"/>
+			<item value="C:\Users\toryy\Downloads\ProgramPrettyPrint.zip"/>
+			<item value="C:\Users\toryy\Downloads\StatementCountPrimitiveCalls.zip"/>
+			<item value="C:\Users\toryy\Downloads\StackWithLinkedList.zip"/>
+			<item value="C:\Users\toryy\Downloads\ArraySiftDown.zip"/>
+			<item value="C:\Users\toryy\Downloads\QueueQuicksort.zip"/>
+			<item value="C:\Users\toryy\Downloads\QueueInsertionSort.zip"/>
+			<item value="C:\Users\toryy\Downloads\SetOnBST.zip"/>
+			<item value="C:\Users\toryy\Downloads\BinarySearchTreeMethods.zip"/>
+			<item value="C:\Users\toryy\Downloads\BinaryTreeMethods.zip"/>
+			<item value="C:\Users\toryy\Downloads\MapWithHashing.zip"/>
+			<item value="C:\Users\toryy\Downloads\HashingExperiments.zip"/>
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="522"/>
+		<item key="DIALOG_Y_ORIGIN" value="128"/>
+		<item key="DIALOG_WIDTH" value="700"/>
+		<item key="DIALOG_HEIGHT" value="631"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-30|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+</section>

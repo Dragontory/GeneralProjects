@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.7.3" sequence="2" timestamp="1698951875046" analysisTimestamp="1698951874765" release="">
+  <Project projectName="ExpressionEvaluator">
+    <Jar>C:\Users\toryy\OneDrive\Documents\SW2\workspace\ExpressionEvaluator\bin\ExpressionEvaluatorTest.class</Jar>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\SW2\workspace\ExpressionEvaluator\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\OneDrive\Documents\components (1).jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.junit_4.13.2.v20211018-1956.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\toryy\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\jre\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\ExpressionEvaluator\test</SrcDir>
+    <SrcDir>C:\Users\toryy\OneDrive\Documents\SW2\workspace\ExpressionEvaluator\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 2 Nov 2023 15:04:34 -0400" total_classes="1" referenced_classes="16" total_bugs="0" total_size="10" num_packages="1" java_version="17.0.5" vm_version="17.0.5+8" cpu_seconds="0.16" clock_seconds="0.28" peak_mbytes="1181.83" alloc_mbytes="2048.00" gc_seconds="0.00">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="10">
+      <ClassStats class="ExpressionEvaluatorTest" sourceFile="ExpressionEvaluatorTest.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="113" invocations="379" avgMicrosecondsPerInvocation="298" maxMicrosecondsPerInvocation="4582" standardDeviationMicrosecondsPerInvocation="556"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="44" invocations="2" avgMicrosecondsPerInvocation="22388" maxMicrosecondsPerInvocation="38436" standardDeviationMicrosecondsPerInvocation="16047"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="43" invocations="380" avgMicrosecondsPerInvocation="114" maxMicrosecondsPerInvocation="714" standardDeviationMicrosecondsPerInvocation="88"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="11" invocations="16" avgMicrosecondsPerInvocation="722" maxMicrosecondsPerInvocation="3471" standardDeviationMicrosecondsPerInvocation="1091"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1698951799375" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1698951799375" release="" codeSize="72" numClasses="1"/>
+  </History>
+</BugCollection>

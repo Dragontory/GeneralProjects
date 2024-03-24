@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SortingMachineWithHeapsort&apos;" deleteContents="false" description="Delete resource &apos;SortingMachineWithHeapsort&apos;" element1="/SortingMachineWithHeapsort" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1696910245943"/>
+</session>
